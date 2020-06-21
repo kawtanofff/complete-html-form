@@ -1,0 +1,14 @@
+body {
+	background-color: #2F4F4F; /*Change the background color*/
+	color:#FAF0E6; /*Change the font color*/
+}
+
+h1 {
+	text-align: center; /*Сenter the title*/
+	font-style: italic; /*Make the title font italic*/
+}
+.button {
+	background-color: #000000; /*Change the background color of the button*/
+	color:#FAF0E6; /*Change the font color inside the button*/
+	padding: 7px;
+}
