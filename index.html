@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Programming Form</title>
+	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript">
+		function valid() /*Create a password validation function*/
+		{
+var pass1 = document.getElementById("password1").value; /*Identify  both passwords*/
+var pass2 = document.getElementById("password2").value;
+if (pass1==pass2) { /*If passwords are the same*/
+	alert("Correct");
+	return true;}
+else {
+	alert("Wrong");
+return false
+     }
+return false
+		}
+	</script>
+
+</head>
+
+<body>
+	<h1>Registration for programming courses</h1> 
+	<form>
+	First name: <br><br>
+	<input type="text" id="firstname" required><br><br>
+	Last name: <br><br>
+	<input type="text" id="lastname" required><br><br>	
+	Password: <br><br>
+	<input type="password" id="password1" required> <br>	
+	<br>
+	Confirm password: <br><br>
+	<input type="password" id="password2" required> <br>	
+	<br>
+	<input class="button" type="button" value="Check passwords" onclick="valid()">
+	<br><br>
+	Birthday: <br><br>
+	<input type="date" name="birthday" required> <br>	
+	<br>
+	City: <br><br>
+	<input type="radio" name="city" value="vinnytsya">Vinnytsya<br>
+	<input type="radio" name="city" value="kyiv">Kyiv<br>
+	<input type="radio" name="city" value="kharkiv">Kharkiv<br>
+	<input type="radio" name="city" value="lviv">Lviv<br>
+	<input type="radio" name="city" value="dnipro">Dnipro<br>
+	<br>
+	Skills: <br><br>
+<input type="checkbox" name="skills" value="html">HTML<br>
+<input type="checkbox" name="skills" value="css">CSS<br>
+<input type="checkbox" name="skills" value="js">JavaScript<br>
+<input type="checkbox" name="skills" value="cplusplus">C++<br>
+<input type="checkbox" name="skills" value="csharp">C#<br>
+<br>
+How many courses do you want to register? <br><br>
+<input type="number" name="quantity" min="1" max="5"> courses<br>
+<br>
+<input class="button" type="reset" value="Reset">
+	</form>
+
+</body>
+</html>
